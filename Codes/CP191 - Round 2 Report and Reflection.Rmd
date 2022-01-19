@@ -1,0 +1,136 @@
+---
+title: "CP191 - Round 2 Report and Reflection"
+author: "Daniel Oyedeji"
+date: "12/18/2020"
+output:
+  pdf_document:
+    latex_engine: xelatex
+fontsize: 12pt
+header-includes:
+    - \usepackage{setspace}\doublespacing
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache=TRUE, comment=NA, progress=TRUE)
+```
+
+## Abstract
+$\,\,\,\,\,\,\,\,\,$ Hunger and malnutrition cause more deaths than AIDS, malaria, and tuberculosis combined, making it the most significant risk to health worldwide (U.N., n.d.). COVID-19 was handled as a danger to human survival. Hence, scientists worldwide worked non-stop to get a vaccine. Imagine if we had millions of people working non-stop to find solutions to world hunger? We would probably find solutions more quickly. World hunger is probably a more complex issue than COVID-19, so it is worthy of more critical thinkers. My capstone idea is to create a prototype web application that gathers creative solutions from people worldwide through games. This platform will also educate people on the current state of world hunger and what they can do to help. In this paper, I show my progress so far towards this goal.
+
+
+
+## Background
+$\,\,\,\,\,\,\,\,\,$ The United Nations estimates that about 821 million people in the world were undernourished in 2018. This number has been rising since 2015 (U.N., n.d.). It seems counter-intuitive that 9 million people starve to death every year (H.J., 2020) even though the food produced is enough to feed everyone (U.N. News, 2019).
+
+$\,\,\,\,\,\,\,\,\,$ So how can we solve it? The first step is to find the root cause(s). A few drivers of acute food insecurity, according to the 2020 global report on food crises (W.F.P., 2020), are:
+
+* Conflict or insecurity
+* Weather extremes
+* Economic shocks e.t.c.
+
+$\,\,\,\,\,\,\,\,\,$ All the areas listed above are good places to start. The second step is deciding where to begin? As a Natural scientist, it may seem right to focus on 'Weather extremes.' However, due to my limited understanding of climate change and its effects on crops, I decided to focus on 'Economic shocks.' 'Economic shocks' is a broad topic, so I limited myself to only simple 'demand and supply' concepts. My main objective was "How to distribute food so that everyone has enough?". I could write a lengthy paper or literature review on this topic. However, as an undergrad, there is a low chance that I will bring anything new to the table.
+
+$\,\,\,\,\,\,\,\,\,$ While I pondered on how to approach my chosen sub-category, I came across a TEDx talk that inspired me (TEDx Talks, 2017). Some Quantum physicists were struggling to get optimal solutions to a problem. So, they decided to make a simple game that anyone could play. This game was a simulation of their problem. The idea was that whenever a player wins the game, their winning strategy gets stored for the Quantum physicist to analyze. This strategy of turning their problem into a game worked so well because it enabled the Quantum physicists to have an army of people looking for solutions. Players came up with optimal winning strategies that even the Quantum physicists did not think of. I decided to implement this strategy to the world hunger problem because it is unlikely that I alone will come up with an innovative solution. However, with multiple people's input, there is a high likelihood of getting an optimal solution.
+
+
+## Work products
+**Link to Web Application**:  
+https://daniel-ope.shinyapps.io/Feed_the_world/  
+  
+**Link to Code Documentation**:  
+https://daniel-ope.shinyapps.io/Feed_The_World_Code_Documentation/  
+  
+
+$\,\,\,\,\,\,\,\,\,$ The web application's main aim is to gather data on plausible strategies to solve unfair food distribution. The web application welcomes players with the image below (Figure 1).
+
+![Welcome Screen or Data Tab]("C:/Users/test/Desktop/Minerva School work/CP191/Capstone Progress/Food Distribution/Data Tab")
+
+$\\$
+Here is a list of each section in the web application:
+
+1. **Data Tab**: The first tab a player lands on is the `Data` tab. I placed this tab first to enlighten players about the current state of world hunger and its drivers. It is still incomplete for now. I plan to add explanations in the space below the graph. The data is sourced from the U.S. government through the World Factbook and has been arranged in an easy to use format on Kaggle (Fernando Lasso, 2017).
+
+2. **Simulation Tab**: The purpose of this tab is to inform the player of the effects of variables like 'Discrimination,' 'Accessibility,' and 'Conflict' among countries on world hunger.
+
+3. **Game Tab**:
+    + *Sharing*: This game is still in production.
+    + *Logistics*: The purpose of this game is to discover optimal strategies for the planets to share their resources to sustain everyone.
+
+4. **About Tab**: This tab aims to state the purpose of the web application and tell the player more about me. It will also have a feedback form.
+
+![Game Tab - Logistics. *Note*: The content of this tab has been shrunk to fit into a single image.]("C:/Users/test/Desktop/Minerva School work/CP191/Capstone Progress/Food Distribution/Game Tab - Logistics")
+  
+$\,\,\,\,\,\,\,\,\,$ When I was thinking of games to make, I decided to read up on the games used in school to teach children values like sharing and responsibility. Two games I drew inspiration from were 'Global Hunger Simulation' (Learning to give, n.d.) and 'Global food inequality – simulation game' (World Vision, 2015). Sadly, I have not finalized the detailed steps of the `Logistics` game. The games have to be interactive and visually pleasing so that players will find them attractive (Figure 2).
+
+
+
+## Analysis and reflection
+$\,\,\,\,\,\,\,\,\,$ In the 'Background' section, I outlined how I narrowed my work product scope to only focus on 'Food distribution.' The work product currently lacks depth and rigor because it mostly focuses on the game and the interactive user interface. However, by the time the web application is complete, there will be enough depth and rigor.  
+
+The metrics I used to measure the quality of the work product were:
+
+* **Ease of Navigation**:
+    + *Web Application*: When building the web application, I ensured that all the essential tabs and sub-tabs could be seen at once. Only the `Data` tab has sub-tabs that cannot be seen when on another page. However, since it is the landing page, the player will know the sub-tabs from the start. I made the `Game` tab a drop-down menu to maximize each game's screen space.
+    + *Code Documentation*: I added a table of content to allow visitors of this site to jump to their section of interest and have a clear outline of the document's content.
+
+* **Ease of Understanding**:
+    + *Web Application*: I ensured that each variable's meaning in the `Data` tab was clear to the user by adding a help button. I also used tab names that would make it clear what each tab contains. The only lousy tab names I have at the moment are `General`, `Sharing`, and `Logistics`. I will probably change those names later.
+    + *Code Documentation*: I made use of headings to make the purpose of each code chunk clear to the average person. I tried my best to practice clean code principles. I know I broke some clean code principles, but with time these principles will become second nature.
+
+$\,\,\,\,\,\,\,\,\,$ My next steps would be to complete the remaining parts of the web application and practice more clean code principles. These are the best next steps because:
+
+* I can have a simple web application to add to my portfolio. A portfolio will be useful when applying to tech-related parts of natural science industries.
+    + For example, some hospitals usually use R (& SQL) when handling their database. An employer might value that I can build local web applications for different departments to share data easily.
+
+* Mastering clean code principles will make my work look more professional and easy to understand.
+    + An employer will value this because if I am integrated into a team, I can code in a way that allows someone to continue from where I left. It will also make it easy for others to make changes to the code without me explaining what I did.
+    
+
+$\,\,\,\,\,\,\,\,\,$ This round 2 project could potentially be a capstone project for a Natural science major. So far, I have not delved deeply into the natural science aspects, such as explaining the data in the `General` tab and making inferences based on each variable. This project could also be fitting for a Computer science major. I made my 'Focus for Round 2 of Project Exploration' when I was double majoring in Computer science and Natural science. However, due to recent events, I plan on dropping Computer science as a major. To substitute for this, I plan to take NS270 which makes use of R programming language but in a Natural science context. I have looked through the syllabus, and I will be able to use at least one LO (#datanalysis, or #dataprep) from this class. I also plan to take NS156, which should enable me to build simple earth systems simulations to add to the web application.
+
+
+$\,\,\,\,\,\,\,\,\,$ I followed through on my 'Focus for Round 2 of Project Exploration' plans. I finished the courses I planned to finish and even more. The only difference from my initial plan was that I focused on the game section rather than the web application's simulation section. Both my round 1 and round 2 ideas could serve as my capstone project. At the moment, I am indifferent since they both make use of similar skills. However, I am confident one of them (or a modification of both) would end up being my final choice for a capstone project.
+
+
+
+## Description and analysis of HC and LO applications
+* **#breakitdown**: While settling on an approach to take, I used the drivers of acute food insecurity to split the issue of world hunger into smaller parts. I chose 'Economic shock' within these parts, and I decided to focus on the aspect of 'demand and supply' for my `Logistics` game. After taking NS156, I will be more prepared to delve into the aspect of 'Weather extremes' and choose a sub-category under it to make another game. When the web application is complete, I can combine solutions from different games to propose practical solutions.
+
+* **#dataviz**: In the `Data` tab, users are allowed to choose between the map or globe view, which are both appropriate ways of viewing the data as opposed to using a bar chart. The colors used on the data visualization are appropriate since there is a clear contrast. The colors of the countries are distinct from the color of the ocean. Also, the color of countries with no data is distinct from the color of countries with data.
+
+\newpage
+
+## References
+Fernando Lasso. (2017). Countries of the World (Version 1) [csv file]. Retrieved from https://www.kaggle.com/fernandol/countries-of-the-world  
+$\,$
+
+H.J. Mai. (2020, May 5). U.N. Warns Number Of People Starving To Death Could Double Amid Pandemic. Retrieved from https://www.npr.org/sections/coronavirus-live-updates/2020/05/05/850470436/u-n-warns-number-of-people-starving-to-death-could-double-amid-pandemic  
+$\,$
+
+Learning to give. (n.d.). Global Hunger Simulation. Retrieved from http://learningtogive.org/sites/default/files/handouts/Global_Hungar_Simulation.pdf  
+$\,$
+
+TEDx Talks. (2017, July 11). How to become a quantum physicist in five minutes | Jacob Sherson | TEDxAarhus [Video]. YouTube. https://www.youtube.com/watch?v=vkVnnN0MjIE  
+$\,$
+
+U.N. (n.d.). Global Issues: Food. Retrieved from https://www.un.org/en/sections/issues-depth/food/  
+$\,$
+
+U.N. News. (2019, October 3). Can we feed the world and ensure no one goes hungry? Retrieved from https://news.un.org/en/story/2019/10/1048452  
+$\,$
+
+W.F.P. (2020, April 20). 2020 - Global Report on Food Crises. Retrieved from https://www.wfp.org/publications/2020-global-report-food-crises  
+$\,$
+
+World Vision. (2015). Global food inequality – simulation game. Retrieved from https://www.worldvision.com.au/docs/default-source/school-resources/global-food-inequality---simulation-game-instructions.pdf  
+$\,$
+
+
+## Word Count
+
+* Abstract: 132 words
+* Background: 367 words
+* Work product: 295 words
+* Analysis and reflection: 684 words
+* Description and analysis of HC and LO applications: 171 words
+

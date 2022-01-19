@@ -1,0 +1,12 @@
+name: Feed_The_World_Code_Documentation
+title: Feed_The_World_Code_Documentation
+username:
+account: daniel-ope
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3404940
+bundleId: 4004045
+url: https://daniel-ope.shinyapps.io/Feed_The_World_Code_Documentation/
+when: 1608258461.65749
+asMultiple: FALSE
+asStatic: FALSE

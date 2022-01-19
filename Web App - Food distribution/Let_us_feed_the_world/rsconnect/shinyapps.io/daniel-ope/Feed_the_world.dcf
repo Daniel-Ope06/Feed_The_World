@@ -1,0 +1,12 @@
+name: Feed_the_world
+title: Feed_the_world
+username:
+account: daniel-ope
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3379279
+bundleId: 4003928
+url: https://daniel-ope.shinyapps.io/Feed_the_world/
+when: 1608255976.54909
+asMultiple: FALSE
+asStatic: FALSE
